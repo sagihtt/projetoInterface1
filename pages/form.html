@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/png" href="/assets/icon/favicon.png">
+    <title>Cadastro</title>
+</head>
+
+<body id="bodyAll">
+    <h2 id="ancora"></h2>
+
+    <nav>
+        <ul class="menu">
+            <li id="logo"><a href="../index.html"><img src="../assets/icon/logo.png" alt="Logo"></a></li>
+            <li>
+                <a href="#">ACESSO</a>
+                <ul>
+                    <li><a href="tables.html">PLANOS</a></li>
+                    <li><a href="form.html">CADASTRO</a></li>
+                </ul>
+            </li>
+            <li><a href="gallery.html">GALERIA</a></li>
+        </ul>
+    </nav>
+    
+    <br>
+    <br>
+    <form action="lugarNenhum.sql" method="post">
+        <fieldset>
+            <legend align="left">Dados de Acesso</legend>
+            <p id="formP">Usuário:<input type="text" name="username"></p>
+            <p id="formP">Email:<input type="email" name="email"></p>
+            <p id="formP">Discord ID:<input type="text" name="discord_id"></p>
+            <p id="formP">Partner ID:<input type="text" name="code_id"></p>
+            <p id="formP">Senha:<input type="password" name="password" maxlength="10"></p>
+            <p id="formP">Confirmar Senha:<input type="password" name="confirm_password" maxlength="10"></p>
+        </fieldset>
+        <fieldset>
+            <legend align="left">Dados Adicionais</legend>
+            <label>País:</label>
+            <select>
+                <option value="brasil">Brasil</option>
+                <option value="chile">Chile</option>
+                <option value="uruguai">Uruguai</option>
+                <option value="paraguai">Paraguai</option>
+                <option value="argentina">Argentina</option>
+                <option value="outro">Outro</option>
+            </select>
+            <br>
+            <br>
+            <label>Idade:</label>
+            <select>
+                <option value="18-25">18-25</option>
+                <option value="26-35">26-35</option>
+                <option value="36-45">36-45</option>
+                <option value="46-55">46-55</option>
+                <option value="56+">56+</option>
+            </select>
+            <br>
+            <br>
+            <label>Playstyle:</label>
+            <input type="radio" name="cheat" value="rage"> Rage
+            <input type="radio" name="cheat" value="semi_rage"> Semi-Rage
+            <input type="radio" name="cheat" value="legit"> Legit
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend align="left">Pagamento</legend>
+            <select>
+                <option value="cartao_credito">Stripe</option>
+                <option value="paypal">PayPal</option>
+                <option value="usdt">USDT</option>
+                <option value="ltc">LTC</option>
+                <option value="pix">PIX</option>
+            </select>
+        </fieldset>
+        <p id="formP"><input type="checkbox" name="Aceito" value="Sim"> Aceito os termos e as condições.</p>
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+
+    <a href="#ancora" id="topo"><img src="../assets/icon/arrow.png" alt="Inicio da página"></a>
+</body>
+
+</html>
